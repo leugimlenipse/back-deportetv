@@ -12,6 +12,13 @@ public interface UsuarioImpl {
     // Crear el usuario
     Usuario createUser(Usuario usuario);
 
+    // Actualizar el usuario
+    Usuario updateUser(Usuario usuario);
 
+    // Eliminar usuario
+    void deleteUser(Long idUsuario);
+
+    // Buscar usuario
+    Usuario findByUsernameAndPassword(String username, String password);
 
 }
