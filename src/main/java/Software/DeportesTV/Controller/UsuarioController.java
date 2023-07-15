@@ -1,7 +1,5 @@
 package Software.DeportesTV.Controller;
 
-import Software.DeportesTV.DTO.UsuarioDTO;
-import Software.DeportesTV.Mapper.UsuarioMapper;
 import Software.DeportesTV.Model.Usuario;
 import Software.DeportesTV.Repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;

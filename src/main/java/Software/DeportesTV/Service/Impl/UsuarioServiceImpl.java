@@ -1,7 +1,5 @@
 package Software.DeportesTV.Service.Impl;
 
-import Software.DeportesTV.DTO.UsuarioDTO;
-import Software.DeportesTV.Mapper.UsuarioMapper;
 import Software.DeportesTV.Model.Usuario;
 import Software.DeportesTV.Repository.UsuarioRepository;
 import Software.DeportesTV.Service.Interface.UsuarioImpl;
@@ -21,7 +19,7 @@ public class UsuarioServiceImpl implements UsuarioImpl {
     }
 
     @Override
-    public Usuario createUser(UsuarioDTO usuarioDTO) {
-        return this.usuarioRepository.save(UsuarioMapper.INSTANCE.toUsuario(usuarioDTO));
+    public Usuario createUser(Usuario usuario) {
+        return this.usuarioRepository.save(usuario);
     }
 }

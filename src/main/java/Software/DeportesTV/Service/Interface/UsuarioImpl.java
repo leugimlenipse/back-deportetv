@@ -1,6 +1,5 @@
 package Software.DeportesTV.Service.Interface;
 
-import Software.DeportesTV.DTO.UsuarioDTO;
 import Software.DeportesTV.Model.Usuario;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +10,7 @@ public interface UsuarioImpl {
     Usuario findByUsername(String username);
 
     // Crear el usuario
-    Usuario createUser(UsuarioDTO usuarioDTO);
+    Usuario createUser(Usuario usuario);
 
 
 
