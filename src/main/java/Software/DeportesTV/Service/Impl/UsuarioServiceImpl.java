@@ -1,7 +1,5 @@
 package Software.DeportesTV.Service.Impl;
 
-import Software.DeportesTV.DTO.UsuarioDTO;
-import Software.DeportesTV.Mapper.UsuarioMapper;
 import Software.DeportesTV.Model.Usuario;
 import Software.DeportesTV.Model.UsuarioEquipo;
 import Software.DeportesTV.Repository.IUsuarioEquipoRepository;
