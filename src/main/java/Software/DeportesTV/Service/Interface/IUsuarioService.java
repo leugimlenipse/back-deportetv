@@ -1,6 +1,5 @@
 package Software.DeportesTV.Service.Interface;
 
-import Software.DeportesTV.DTO.UsuarioDTO;
 import Software.DeportesTV.Model.Usuario;
 import org.springframework.stereotype.Service;
 
