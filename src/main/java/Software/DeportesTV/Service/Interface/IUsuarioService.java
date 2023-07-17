@@ -4,15 +4,20 @@ import Software.DeportesTV.DTO.UsuarioDTO;
 import Software.DeportesTV.Model.Usuario;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
-public interface UsuarioImpl {
+public interface IUsuarioService {
 
     // Encontrar los datos del usuario por el username
     Usuario findByUsername(String username);
 
     // Crear el usuario
-    Usuario createUser(UsuarioDTO usuarioDTO);
+    Usuario signUp(Usuario usuarioDTO);
 
+    Boolean login(Usuario usuarioDTO);
 
+    Boolean seguirEquipo(Long idUsuario, Long idEquipo);
 
+    List<Long> getEquiposSeguidos(Long idUsuario);
 }
