@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.xml.bind.ValidationException;
+import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -34,6 +35,7 @@ public class UsuarioServiceImpl implements IUsuarioService {
         if (existente != null) {
             throw new RuntimeException("El usuario ya existe");
         }
+        usuarioDTO.setFechaDesde(new Date());
 
         return this.usuarioRepository.save(usuarioDTO);
     }
